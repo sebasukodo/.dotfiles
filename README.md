@@ -29,6 +29,7 @@ To switch both configs at once, use the script:
 
 ```bash
 ~/.config/hypr/switch-setup.sh <config-name>
+```
 
 Available options are:
 - default
