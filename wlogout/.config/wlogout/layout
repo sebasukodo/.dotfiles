@@ -1,0 +1,33 @@
+{
+    "label" : "lock",
+    "action" : "sleep 1; hyprlock",
+    "text" : "Sperren",
+    "keybind" : "l"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Herunterfahren",
+    "keybind" : "s"
+}
+{
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Neustarten",
+    "keybind" : "r"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Energiesparmodus",
+    "keybind" : "u"
+}
+{
+    "label" : "logout",
+    "action" : "sleep 1; hyprctl dispatch exit",
+    "text" : "Abmelden - Benutzer wechseln",
+    "keybind" : "e"
+}
+
