@@ -10,7 +10,7 @@ cd Bilder
 mkdir Screenshots/ wallpaper/
 ```
 
-## Dependencies:
+## Dependencies
 ```bash
 sudo pacman -Syu
 sudo pacman -S git base-devel
@@ -26,40 +26,15 @@ cd yay
 makepkg -si
 ```
 
-### Japanese Input
-```bash
-sudo pacman -S fcitx5 fcitx5-mocz fcitx5-configtool fcitx5-gtk fcitx5-qt noto-fonts-cjk
-```
-
 ### Bluetooth
 ```bash
 sudo pacman -S bluez bluez-utils linux-headers
 yay -S xpadneo-dkms-git
 ```
 
-### hp printer
+### Hyprland and Waybar
 ```bash
-sudo pacman -S cups ghostscript
-sudo pacman -S hplip
-systemctl enable --now cups.service
-#change ip_addr to ip adress of printer
-#hp_setup -i 192.168.x.x
-```
-
-### LaTex + Kile as editor
-```bash
-sudo pacman -S texlive texlive-langgerman biber kile
-```
-
-### Manga-OCR
-```bash
-sudo pacman -S python-pipx wl-clipboard
-pipx install manga-ocr
-pipx ensurepath
-```
-
-### needed programs for Hyprland and Waybar
-```bash
+#sudo pacman -S hyprland
 sudo pacman -S kitty rofi waybar ttf-noto-nerd pavucontrol hyprpaper hyprshot hyprpicker hyprlock hyprpolkitagent
 yay -S wlogout
 yay -S rofi-bluetooth-git
@@ -84,7 +59,36 @@ sudo pacman -S wireplumber pulseaudio xdg-desktop-portal xdg-desktop-portal-hypr
 yay -S xwaylandvideobridge-git
 ```
 
+## Optional dependencies
+
+### Japanese Input
+```bash
+sudo pacman -S fcitx5 fcitx5-mocz fcitx5-configtool fcitx5-gtk fcitx5-qt noto-fonts-cjk
+```
+
+### hp printer
+```bash
+sudo pacman -S cups ghostscript
+sudo pacman -S hplip
+systemctl enable --now cups.service
+#change ip_addr to ip adress of printer
+#hp_setup -i 192.168.x.x
+```
+
+### LaTex + Kile as editor
+```bash
+sudo pacman -S texlive texlive-langgerman biber kile
+```
+
+### Manga-OCR
+```bash
+sudo pacman -S python-pipx wl-clipboard
+pipx install manga-ocr
+pipx ensurepath
+```
+
 ## Dual Boot with Windows
+
 ### set date and time if dual boot with windows
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
