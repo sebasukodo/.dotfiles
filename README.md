@@ -44,6 +44,7 @@ This updates both monitors/monitor.conf and workspaces/workspaces.conf to point 
 
 | Shortcut                                           | Action                                                                                                     |
 | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| <kbd>Super</kbd> + <kbd>Space</kbd>                | Open rofi dmenu
 | <kbd>Super</kbd> + <kbd>C</kbd>                    | Close the currently focused window (`killactive`)                                                          |
 | <kbd>Super</kbd> + <kbd>Q</kbd>                    | Launch Kitty terminal                                                                                      |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> | Reload Waybar (`~/.config/waybar/reload.sh`)                                                               |
