@@ -51,4 +51,4 @@ This updates both monitors/monitor.conf and workspaces/workspaces.conf to point 
 
 ## How to install all needed programs properly
 
-See [Installation instructions](./Installation.md) for details.
+See [Installation instructions](./installation.md) for details.
