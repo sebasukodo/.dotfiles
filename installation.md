@@ -3,10 +3,12 @@
 all commands to use for installing everything I need for my PC to work properly.
 
 ## Necessary folders
+```bash
 cd ~
 mkdir Downloads/ Bilder/
 cd Bilder
 mkdir Screenshots/ wallpaper/
+```
 
 ## Dependencies:
 ```bash
