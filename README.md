@@ -49,3 +49,6 @@ This updates both monitors/monitor.conf and workspaces/workspaces.conf to point 
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> | Reload Waybar (`~/.config/waybar/reload.sh`)                                                               |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Select a region screenshot with `hyprshot`, copy to clipboard, and save it under `~/Bilder/Screenshots/`   |
 
+## How to install all needed programs properly
+
+See [Installation instructions](./Installation.md) for details.
