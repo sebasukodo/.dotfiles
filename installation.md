@@ -61,6 +61,11 @@ yay -S xwaylandvideobridge-git
 
 ## Optional dependencies
 
+### Docker + DockerDesktop
+```bash
+yay -S docker-desktop
+```
+
 ### Japanese Input
 ```bash
 sudo pacman -S fcitx5 fcitx5-mocz fcitx5-configtool fcitx5-gtk fcitx5-qt noto-fonts-cjk
