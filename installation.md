@@ -61,9 +61,19 @@ yay -S xwaylandvideobridge-git
 
 ## Optional dependencies
 
-### Docker + DockerDesktop
+### Docker + Docker Desktop
 ```bash
+# Install Docker Desktop from AUR
 yay -S docker-desktop
+
+# Create a new GPG key (with encryption support, required for pass)
+gpg --quick-generate-key "Your Name <your-email@mail.com>" rsa3072 cert,sign,auth,encr never
+
+# Show your secret keys and copy the Key ID (the part after "rsa3072/")
+gpg --list-secret-keys --keyid-format=long
+
+# Initialize pass with your Key ID
+pass init <copied-key-id>
 ```
 
 ### Japanese Input
