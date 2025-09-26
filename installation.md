@@ -95,6 +95,13 @@ systemctl enable --now cups.service
 sudo pacman -S texlive texlive-langgerman biber kile
 ```
 
+### neovim
+```bash
+sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
+cd ~/.dotfiles
+stow nvim
+```
+
 ### Manga-OCR
 ```bash
 sudo pacman -S python-pipx wl-clipboard
