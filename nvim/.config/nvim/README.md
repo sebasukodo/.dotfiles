@@ -1,6 +1,6 @@
 # Neovim Configuration
 
-This directory contains my personal **Neovim configuration**, managed as part of my [dotfiles](../..).  
+This directory contains my personal **Neovim configuration**, managed as part of my [dotfiles](../../..).  
 It is based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim), which served as a starting point for a minimal yet powerful setup. Over time, I adapt and extend it to match my own workflow.
 
 ## Features
