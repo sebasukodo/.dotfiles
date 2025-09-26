@@ -8,6 +8,7 @@ Using [GNU Stow](https://www.gnu.org/software/stow/), configuration files can ea
 - **Waybar** – customizable status bar for Wayland  
 - **Kitty** – GPU-accelerated terminal  
 - **wlogout** – graphical logout menu for Wayland
+- **Neovim** – extensible text editor (based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim))
 
 ## Hyprland Setups & Switching
 
