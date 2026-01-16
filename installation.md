@@ -95,6 +95,18 @@ systemctl enable --now cups.service
 sudo pacman -S texlive texlive-langgerman biber kile
 ```
 
+### Go
+```bash
+curl -sS https://webi.sh/golang | sh; \
+source ~/.config/envman/PATH.env
+```
+
+### SQLC and Goose for using databases with Go
+```bash
+go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+go install github.com/pressly/goose/v3/cmd/goose@latest
+```
+
 ### Manga-OCR
 ```bash
 sudo pacman -S python-pipx wl-clipboard
