@@ -35,7 +35,7 @@ yay -S xpadneo-dkms-git
 ### Hyprland and Waybar
 ```bash
 #sudo pacman -S hyprland
-sudo pacman -S kitty rofi waybar ttf-noto-nerd pavucontrol hyprpaper hyprshot hyprpicker hyprlock hyprpolkitagent
+sudo pacman -S kitty swaync rofi waybar ttf-noto-nerd pavucontrol hyprpaper hyprshot hyprpicker hyprlock hyprpolkitagent
 yay -S wlogout
 yay -S rofi-bluetooth-git
 ```
