@@ -12,7 +12,7 @@ Using [GNU Stow](https://www.gnu.org/software/stow/), configuration files can ea
 ## Hyprland Setups & Switching
 
 This setup uses modular **monitor** and **workspace** configurations.  
-Inside `~/.config/hypr/` there are two folders:
+Inside `~/.dotfiles/hyprland/.config/hypr/` there are two folders:
 
 - `monitors/`
 - `workspaces/`
@@ -28,7 +28,7 @@ Each folder contains:
 To switch both configs at once, use the script:
 
 ```bash
-~/.config/hypr/switch-setup.sh <config-name>
+~/.dotfiles/hyprland/.config/hypr/switch-configs.sh <config-name>
 ```
 
 Available options are:
@@ -36,7 +36,7 @@ Available options are:
 - myTrioSetup
 - myDualSetup
 
-Example: ~/.config/hypr/switch-setup.sh myTrioSetup
+Example: ~/.dotfiles/hyprland/.config/hypr/switch-configs.sh myTrioSetup
 
 This updates both monitors/monitor.conf and workspaces/workspaces.conf to point to myTrioSetup.conf.
 
@@ -47,7 +47,7 @@ This updates both monitors/monitor.conf and workspaces/workspaces.conf to point 
 | <kbd>Super</kbd> + <kbd>Space</kbd>                | Open rofi dmenu
 | <kbd>Super</kbd> + <kbd>C</kbd>                    | Close the currently focused window (`killactive`)                                                          |
 | <kbd>Super</kbd> + <kbd>Q</kbd>                    | Launch Kitty terminal                                                                                      |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> | Reload Waybar (`~/.config/waybar/reload.sh`)                                                               |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> | Reload Waybar (`~/.dotfiles/waybar/.config/waybar/reload.sh`)                                                               |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Select a region screenshot with `hyprshot`, copy to clipboard, and save it under `~/Bilder/Screenshots/`   |
 
 ## How to install all needed programs properly
