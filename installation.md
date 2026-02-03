@@ -120,3 +120,10 @@ pipx ensurepath
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
+
+## Ignore Changes after using switch_configs.sh
+
+```bash
+git update-index --assume-unchanged hyprland/.config/hypr/workspaces/workspaces.conf
+git update-index --assume-unchanged hyprland/.config/hypr/monitors/monitor.conf
+```
