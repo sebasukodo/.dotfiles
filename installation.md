@@ -87,7 +87,7 @@ sudo pacman -S cups ghostscript
 sudo pacman -S hplip
 systemctl enable --now cups.service
 #change ip_addr to ip adress of printer
-#hp_setup -i 192.168.x.x
+hp-setup -i 192.168.x.x
 ```
 
 ### LaTex + Kile as editor
