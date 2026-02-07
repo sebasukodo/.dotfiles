@@ -32,9 +32,14 @@ sudo pacman -S bluez bluez-utils linux-headers
 yay -S xpadneo-dkms-git
 ```
 
+### Network Manager
+```bash
+sudo pacman -S networkmanager network-manager-applet
+sudo systemctl enable --now NetworkManager
+```
 ### Hyprland and Waybar
 ```bash
-#sudo pacman -S hyprland
+sudo pacman -S hyprland
 sudo pacman -S kitty swaync rofi waybar ttf-noto-nerd pavucontrol hyprpaper hyprshot hyprpicker hyprlock hyprpolkitagent
 yay -S wlogout
 yay -S rofi-bluetooth-git

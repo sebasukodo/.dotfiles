@@ -134,8 +134,8 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #000000;
+    background-color: #ffbd20;
 }
 
 @keyframes blink {
@@ -147,13 +147,18 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
+    background-color: #c0392b;
     color: #ffffff;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#battery.warning {
+    background-color: #eb4d4b;
+    color: #000000;
 }
 
 label:focus {
@@ -164,15 +169,6 @@ label:focus {
     background-color: #ffbd20;
     color: #000000;
     font-size: 17px;
-}
-
-#cpu {
-    background-color: #ffbd20;
-    color: #000000;
-}
-
-#memory {
-    background-color: #ffbd20;
 }
 
 #network {
@@ -378,6 +374,15 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+
+#cpu {
+    background-color: #ffbd20;
+    color: #000000;
+}
+
+#memory {
+    background-color: #ffbd20;
 }
 
 */
