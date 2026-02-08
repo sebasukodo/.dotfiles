@@ -37,6 +37,12 @@ yay -S xpadneo-dkms-git
 sudo pacman -S networkmanager network-manager-applet
 sudo systemctl enable --now NetworkManager
 ```
+
+### Kwallet for remembering passwords
+```bash
+sudo pacman -S kwalletmanager kwallet ksecretsservice kwallet-pam
+```
+
 ### Hyprland and Waybar
 ```bash
 sudo pacman -S hyprland
