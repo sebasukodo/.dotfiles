@@ -66,6 +66,24 @@ yay -S xwaylandvideobridge-git
 
 ## Optional dependencies
 
+### SilentSDDM Theme
+```bash
+yay -S sddm-silent-theme
+cd ~/.dotfiles/sddm
+chmod +x copy_conf.sh change_wallpaper.sh change_avatar.sh
+./copy_conf.sh
+```
+
+For changing sddm wallpaper use
+```bash
+./change_wallpaper.sh <path_to_wallpaper>
+```
+
+For changing user avatar use
+```bash
+./change_avatar.sh <username> <path_to_image>
+```
+
 ### Docker + Docker Desktop
 ```bash
 # Install Docker Desktop from AUR
