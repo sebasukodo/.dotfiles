@@ -73,11 +73,19 @@ yay -S xwaylandvideobridge-git
 ## Optional dependencies
 
 ### SilentSDDM Theme
+Run the installation script to install **sddm-silent-theme** and apply my custom changes.
+
+The script will install the theme if needed, back up existing files, and replace the SDDM theme configuration and components with my changes.
+As part of these changes, text in the theme will now have a border:
+
+* By default, `text-has-border` is applied under `[General]` in `.dotfiles/sddm/silent-theme-changes/configs/default.conf` to enable a black outline around text.
+* Individual text elements can have a custom border color. For example, under `[LoginScreen.LoginArea.Username]`, the `border-color: "hex-value"` setting defines the outline color.
+
+In addition, `/etc/sddm.conf` will be replaced if present.
 ```bash
-yay -S sddm-silent-theme
 cd ~/.dotfiles/sddm
-chmod +x copy_conf.sh change_wallpaper.sh change_avatar.sh
-./copy_conf.sh
+chmod +x install_theme.sh
+./install_theme.sh
 ```
 
 For changing sddm wallpaper use
