@@ -1,0 +1,38 @@
+[Groups/0]
+# Group Name
+Name="Gruppe 2"
+# Layout
+Default Layout=de
+# Default Input Method
+DefaultIM=keyboard-de
+
+[Groups/0/Items/0]
+# Name
+Name=keyboard-de
+# Layout
+Layout=
+
+[Groups/1]
+# Group Name
+Name="Gruppe 1"
+# Layout
+Default Layout=de
+# Default Input Method
+DefaultIM=mozc
+
+[Groups/1/Items/0]
+# Name
+Name=keyboard-de
+# Layout
+Layout=
+
+[Groups/1/Items/1]
+# Name
+Name=mozc
+# Layout
+Layout=de
+
+[GroupOrder]
+0="Gruppe 2"
+1="Gruppe 1"
+
