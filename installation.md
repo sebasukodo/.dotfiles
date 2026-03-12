@@ -98,7 +98,13 @@ For changing user avatar use
 ./change_avatar.sh <username> <path_to_image>
 ```
 
-### Docker + Docker Desktop
+### Docker
+```bash
+sudo pacman -S docker docker-compose
+sudo systemctl enable docker.service && sudo systemctl start docker.service
+```
+
+### Docker Desktop
 ```bash
 # Install Docker Desktop from AUR
 yay -S docker-desktop
