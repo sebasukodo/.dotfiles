@@ -100,7 +100,7 @@ For changing user avatar use
 
 ### Docker
 ```bash
-sudo pacman -S docker docker-compose
+sudo pacman -S docker docker-compose docker-buildx
 sudo systemctl enable docker.service && sudo systemctl start docker.service
 ```
 
