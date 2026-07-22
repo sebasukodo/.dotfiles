@@ -121,7 +121,7 @@ pass init <copied-key-id>
 
 ### Japanese Input
 ```bash
-sudo pacman -S fcitx5 fcitx5-mocz fcitx5-configtool fcitx5-gtk fcitx5-qt noto-fonts-cjk
+sudo pacman -S fcitx5 fcitx5-mozc fcitx5-configtool fcitx5-gtk fcitx5-qt noto-fonts-cjk
 ```
 
 ### hp printer
