@@ -13,7 +13,7 @@ mkdir Screenshots/ wallpaper/
 ## Dependencies
 ```bash
 sudo pacman -Syu
-sudo pacman -S git base-devel
+sudo pacman -S git base-devel usbutils
 ```
 
 ### Yay
@@ -148,6 +148,12 @@ source ~/.config/envman/PATH.env
 ```bash
 go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
 go install github.com/pressly/goose/v3/cmd/goose@latest
+```
+
+### Scarlett Focusrite Solo (3rd Gen)
+```bash
+sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
 ```
 
 ### Manga-OCR
