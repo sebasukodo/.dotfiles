@@ -10,8 +10,8 @@ if [ $# -ne 1 ]; then
     echo "Usage: $0 <config-name>"
     echo
     echo "Available configs (monitors & workspaces):"
-    echo "  Monitors:   $(ls "$BASE_DIR/monitors"/*.conf 2>/dev/null | xargs -n1 basename | sed 's/\.conf//')"
-    echo "  Workspaces: $(ls "$BASE_DIR/workspaces"/*.conf 2>/dev/null | xargs -n1 basename | sed 's/\.conf//')"
+    echo "  Monitors:   $(ls "$BASE_DIR/monitors"/*.lua 2>/dev/null | xargs -n1 basename | sed 's/\.lua//')"
+    echo "  Workspaces: $(ls "$BASE_DIR/workspaces"/*.lua 2>/dev/null | xargs -n1 basename | sed 's/\.lua//')"
     exit 1
 fi
 
@@ -23,17 +23,17 @@ switch_link () {
     local FILE="$2"
     local TARGET="$3"
 
-    if [ ! -f "$DIR/$TARGET.conf" ]; then
-        echo "Error: '$TARGET.conf' not found in $DIR"
+    if [ ! -f "$DIR/$TARGET.lua" ]; then
+        echo "Error: '$TARGET.lua' not found in $DIR"
         return 1
     fi
 
-    ln -sf "$TARGET.conf" "$DIR/$FILE"
-    echo "Switched $FILE -> $TARGET.conf"
+    ln -sf "$TARGET.lua" "$DIR/$FILE"
+    echo "Switched $FILE -> $TARGET.lua"
 }
 
 # Monitors
-switch_link "$BASE_DIR/monitors" "monitor.conf" "$TARGET"
+switch_link "$BASE_DIR/monitors" "monitor.lua" "$TARGET"
 
 # Workspaces
-switch_link "$BASE_DIR/workspaces" "workspaces.conf" "$TARGET"
+switch_link "$BASE_DIR/workspaces" "workspaces.lua" "$TARGET"
