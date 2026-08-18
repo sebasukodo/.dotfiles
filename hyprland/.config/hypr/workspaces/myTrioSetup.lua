@@ -12,7 +12,7 @@ hl.workspace_rule({
 })
 hl.workspace_rule({
     workspace = "3",
-    monitor = "DP-3",
+    monitor = "DP-1",
     default = true,
 })
 hl.workspace_rule({
@@ -25,7 +25,7 @@ hl.workspace_rule({
 })
 hl.workspace_rule({
     workspace = "6",
-    monitor = "DP-3",
+    monitor = "DP-1",
 })
 hl.workspace_rule({
     workspace = "7",
@@ -37,5 +37,5 @@ hl.workspace_rule({
 })
 hl.workspace_rule({
     workspace = "9",
-    monitor = "DP-3",
+    monitor = "DP-1",
 })
