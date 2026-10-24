@@ -44,6 +44,9 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("fcitx5")
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
     hl.exec_cmd("/usr/lib/pam_wallet_init")
+    hl.dispatch(hl.dsp.focus({
+        workspace = 1,
+    }))
 end)
 
 
